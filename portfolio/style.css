@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-around; */
+    height: 70px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav .leftNav {
+    display: flex;
+    margin-top: 9px;
+    margin-left: 12rem;
+}
+
+nav .leftNav .profileImage img {
+    height: 2.8rem;
+    width: 2.8rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .leftNav .profileName {
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font: bold;
+    margin-top: 9px;
+    color: white;
+    cursor: pointer;
+}
+
+nav .leftNav .profileName a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .rightNav {
+    margin-top: 9px;
+    margin-left: 50rem;
+}
+
+nav .rightNav ul {
+    display: flex;
+    margin-top: 14px;
+}
+
+nav .rightNav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav .rightNav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 3px 13px;
+    border: none;
+    border-radius: 8px;
+}
+
+nav .rightNav ul li a:hover {
+    background-color: white;
+
+    color: black;
+    transition: .4s;
+}
+
+main {
+    background: linear-gradient(to bottom, #090000, #330000, #490000, #5A0000, #680000, #760000, #850000, #920000, #A10000, #AF0000, #D80000, #FF0000);
+    height: 45vw;
+    width: 118.95rem;
+    display: flex;
+}
+
+main .leftMain {
+    margin-top: 17rem;
+    margin-left: 15rem;
+}
+
+main .leftMain .bold p {
+    color: white;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+main .leftMain .start {
+    font-size: 2.3rem;
+}
+
+main .leftMain .name {
+    font-size: 2.8rem;
+    font: bold;
+}
+
+main .leftMain .work {
+    font-size: 2.3rem;
+}
+
+main .leftMain .thin {
+    margin-top: 20px;
+}
+
+main .leftMain .thin p {
+    color: rgb(231, 217, 217);
+    font-size: 1.2rem;
+}
+
+main .leftMain .thin button {
+    padding: 7px 10px;
+    font-size: 1.3rem;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+main .leftMain .thin button:hover {
+    background-color: #c3bbbb;
+    transition: .3s;
+}
+
+main .rightMain {
+    margin-top: 18rem;
+    margin-left: 18rem;
+}
+
+main .rightMain img {
+    height: 24rem;
+    width: 24rem;
+    /* border-radius: 20%; */
+    /* border: 2px solid; */
+    border-bottom: 4px solid;
+}
+
+.skills .ourSkills {
+    font-size: 3rem;
+    font-family: Arial;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    margin-left: 50rem;
+    margin-right: 50rem;
+    margin-top: 65px;
+    margin-bottom: 0px;
+    border-bottom: 3px solid black;
+    font: bolder;
+    padding-bottom: 5px;
+}
+
+.skillSection {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.skillSection .webDevlopment {
+    height: 40rem;
+    width: 28rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    margin-left: 15rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 7px 7px 15px 0px gray;
+}
+
+.skillSection .webDevlopment h1 {
+    font-size: 5rem;
+    font: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    color: yellow;
+    /* margin-left: 8.5rem; */
+    margin-top: .1rem;
+    font-family: Arial;
+}
+
+.skillSection .webDevlopment h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    /* margin-left: 4rem; */
+}
+
+.skillSection .webDevlopment p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.skillSection .webDesigning {
+    height: 40rem;
+    width: 28rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    margin-left: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 7px 7px 15px 0px gray;
+}
+
+.skillSection .webDesigning svg {
+    margin-top: .8rem;
+}
+
+.skillSection .webDesigning h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.skillSection .webDesigning p {
+    font-size: 1.6rem;
+    margin-top: .9rem;
+}
+
+.skillSection .fDevlopment {
+    height: 40rem;
+    width: 28rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    margin-left: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 7px 7px 15px 0px gray;
+}
+
+.skillSection .fDevlopment svg {
+    margin-top: .7rem;
+}
+
+.skillSection .fDevlopment h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.skillSection .fDevlopment p {
+    font-size: 1.6rem;
+    margin-top: .9rem;
+}
+
+.skillSection .fDevlopment button {
+    padding: 5px 15px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: .9rem;
+    color: red;
+    border: 1px solid red;
+    font: bold;
+    font-family: Arial;
+}
+
+.skillSection .fDevlopment button:hover {
+    background-color: red;
+    transition: .4s;
+    color: white;
+}
+
+.aboutMe {
+    height: 40rem;
+    width: 90rem;
+    background-color: #D9D9D9;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+}
+
+.aboutMe .leftAbout img {
+    height: 28rem;
+    width: 28rem;
+    border: none;
+    border-radius: 3rem;
+    margin: 6rem;
+}
+
+.aboutMe .rightAbout h1 {
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    margin-top: 6rem;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.aboutMe .rightAbout h2 {
+    font-size: 3rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.aboutMe .rightAbout p {
+    font-size: 1.5rem;
+    padding-right: 3rem;
+    font-family: Arial;
+    text-align: justify;
+    color: rgb(110, 105, 105);
+    margin-top: 10px;
+}
+
+.aboutMe .rightAbout button {
+    padding: 5px 15px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: .9rem;
+    color: red;
+    border: 1px solid red;
+    font: bold;
+    font-family: Arial;
+}
+
+.aboutMe .rightAbout button:hover {
+    background-color: red;
+    color: white;
+    transition: .3s;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    font-family: Arial;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    margin-left: 49.5rem;
+    margin-right: 49.5rem;
+    margin-top: 65px;
+    margin-bottom: 0px;
+    border-bottom: 3px solid black;
+    padding-bottom: 5px;
+}
+
+.contact h1 span {
+    margin-left: 1.3rem;
+}
+
+.contact h1 font {
+    color: yellow;
+}
+
+.contact form {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact form input {
+    padding: .8rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    margin: 5px 5px;
+}
+
+#hhh{
+     background-color: white;
+     color: black;
+}
+
+.contact form textarea {
+    height: 17rem;
+    padding: .7rem;
+    font-size: 1.4rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 38rem;
+    font-family: sans-serif;
+    resize: none;
+}
+
+.contact form button{
+    padding: .7rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: yellow;
+    box-shadow: -5px 5px 5px gray;
+    cursor: pointer;
+}
+
+.contact form button:hover{
+    background-color: rgb(223, 223, 9);
+}
+
+.copyright {
+    display: flex;
+    height: 4rem;
+    background-color: #D9D9D9;
+    margin-top: 2rem;
+}
+
+.copyright p{
+    font-size: 1.3rem;
+    opacity: .6;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.copyright .arrow{
+    border: none;
+    background-color: yellow;
+    margin: 7px 0;
+    width: 3.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 70%;
+}
+
+.copyright .arrow:hover{
+    background-color: rgb(172, 172, 8);
+    transition: .3s;
+}
+
+.copyright .arrow svg{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+@media  screen and (max-width: 390px) {
+
+    html, body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    nav{
+        height: 70px;
+        width: 22.45rem;
+        position: relative;
+    }
+
+    nav .leftNav{
+        margin-left: 1rem;
+    }
+
+    nav .leftNav .profileImage img{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    nav .leftNav .profileName{
+        font-size: 1rem;
+        margin-left: .6rem;
+        margin-top: 7px;
+    }
+
+    nav .rightNav{
+        margin-left: 0rem;
+    }
+
+    nav .rightNav ul li a{
+        font-size: 0rem;
+    }
+
+    #hhh{
+        background-color: black;
+        color: black;
+    }
+
+    main {
+        width: 22.45rem;
+        height: 175vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .leftMain{
+        margin-top: 19rem;
+        margin-left: 6rem;
+    }
+
+    main .leftMain .bold .start{
+        font-size: 0rem;
+        margin-left: 18px;
+    }
+
+    main .leftMain .bold .name{
+        font-size: 2.3rem;
+        margin-left: -1.9rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: white;
+    }
+
+    main .leftMain .bold .work{
+        font-size: 1.5rem;
+        margin-left: -1.5rem;
+    }
+
+    main .leftMain .bold .work font{
+        font: bold;
+        margin-left: 1.1rem;
+    }
+
+    main .leftMain .bold .work span{
+        margin-left: -1rem;
+        font-size: 0rem;
+    }
+
+    main .leftMain .thin p{
+        font-size: 0rem;
+    }
+
+    main .leftMain .thin button{
+        padding: 5px 8px;
+        font-size: 1rem;
+        background-color: #D9D9D9;
+        border-radius: 8px;
+        border: none;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+
+    main .rightMain {
+        margin-top: -9rem;
+        margin-left: 4rem;
+    }
+
+    main .rightMain img{
+        height: 15rem;
+        width: 15rem;
+        margin-top: -20rem;
+        border: 2px solid;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 3px ;
+    }
+
+    .skills .ourSkills{
+        font-size: 2.3rem;
+        font-family: Arial;
+        color: white;
+        margin-left: 5rem;
+        margin-right: 4rem;
+        margin-top: 35px;
+        margin-bottom: 0px;
+        border-bottom: 3px solid black;
+        padding-bottom: 5px;
+    }
+
+    .skills .skillSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skillSection .webDevlopment {
+        height: 30rem;
+        width: 19rem;
+        background-color: #D9D9D9;
+        border: none;
+        border-radius: 10px;
+        margin-left: 1.7rem;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0px 0px 15px 5px gray;
+    }
+
+    .skills .skillSection .webDevlopment h1{
+        font-size: 3rem;
+        font: 700;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        color: yellow;
+        margin-top: .1rem;
+        font-family: Arial;
+    }
+
+    .skills .skillSection .webDevlopment p{
+        font-size: 1rem;
+    }
+
+    .skills .skillSection .webDevlopment p span{
+        font-size: 1rem;
+    }
+
+    .skills .skillSection .webDesigning{
+        height: 30rem;
+        width: 19rem;
+        background-color: #D9D9D9;
+        border: none;
+        border-radius: 10px;
+        margin-left: 1.7rem;
+        text-align: center;
+        margin-top: 1.9rem;
+        padding: 1.5rem;
+        box-shadow: 0px 0px 15px 5px gray;
+    }
+
+    .skills .skillSection .webDesigning svg{
+        height: 3rem;
+    }
+
+    .skills .skillSection .webDesigning p{
+        font-size: 1rem;
+    }
+
+    .skills .skillSection .fDevlopment{
+        height: 30rem;
+        width: 19rem;
+        background-color: #D9D9D9;
+        border: none;
+        border-radius: 10px;
+        margin-left: 1.7rem;
+        text-align: center;
+        margin-top: 1.9rem;
+        padding: 1.8rem;
+        box-shadow: 0px 0px 15px 5px gray;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills .skillSection .fDevlopment h2{
+        font-size: 1.5rem;
+    }
+
+    .skills .skillSection .fDevlopment svg{
+        height: 3rem;
+    }
+
+    .skills .skillSection .fDevlopment p{
+        font-size: 1rem;
+    }
+
+    .aboutMe {
+        height: 40rem;
+        width: 19rem;
+        background-color: #D9D9D9;
+        margin-left: 1.7rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutMe .leftAbout img{
+        height: 13rem;
+        width: 13rem;
+        border: none;
+        border-radius: 3rem;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    .aboutMe .rightAbout h1{
+        font-size: 2.3rem;
+        margin-top: -24rem;
+        margin-left: 3.7rem;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        margin-right: 4rem;
+        font: bold;
+    }
+
+    .aboutMe .rightAbout h2{
+        font-size: 1.5rem;
+        -webkit-text-stroke-width: 1px;
+        font: bold;
+        margin-top: 15rem;
+        color: black;
+        margin-left: 23px;
+    }
+
+    .aboutMe .rightAbout p{
+        font-size: 1rem;
+        text-align: center;
+        padding: 0rem 2rem;
+        margin-right: 5px;
+
+    }
+
+    .contact h1{
+        font-size: 2rem;
+        font-family: Arial;
+        color: white;
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 25px;
+        margin-right: 4rem;
+        margin-bottom: 0px;
+        border-bottom: 3px solid black;
+        padding-bottom: 1px;
+    }
+
+    .contact h1 font{
+        margin-left: 5px;
+    }
+
+    .contact form{
+        background-color: gray;
+        margin: 1rem 1.2rem;
+        padding: 10px 23px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .contact form .fullAddress{
+        display: flex;
+        /* margin-left: 25px; */
+    }
+
+    .contact form .fullAddress input{
+        padding: .3rem .5rem;
+        font-size: 1rem;
+        border: none;
+        width: 8rem;
+        border-radius: 10px;
+        background-color: #D9D9D9;
+        margin: 5px 5px;
+    }
+
+    .contact form .phoneSubject{
+        display: flex;
+    }
+
+    .contact form .phoneSubject input{
+        padding: .3rem .5rem;
+        font-size: 1rem;
+        border: none;
+        width: 8rem;
+        border-radius: 10px;
+        background-color: #D9D9D9;
+        margin: 5px 5px;
+    }
+
+    .contact form .textArea textarea{
+        width: 16.5rem;
+        height: 10rem;
+        font-size: 1rem;
+    }
+
+    .contact form button{
+        padding: .5rem .8rem;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    .copyright{
+        height: 3rem;
+        margin-top: 3rem;
+    }
+
+    .copyright p{
+        font-size: .5rem;
+        opacity: .6;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .copyright .arrow{
+        margin: 7px 0;
+        width: 2.5rem;
+        border-radius: 5px;
+        /* padding: 1px 0px; */
+        cursor: pointer;
+        margin-left: 7rem;
+    }
+
+}
